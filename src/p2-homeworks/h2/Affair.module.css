@@ -1,0 +1,7 @@
+.affair {
+    display: flex;
+    justify-content: space-between;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+
+}
