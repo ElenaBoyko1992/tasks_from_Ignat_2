@@ -1,17 +1,31 @@
 .header {
     padding: 20px 0px;
+    display: flex;
 }
 
 .navLinks {
-    transform: translate(-99%);
+    transform: translate(-90%);
     transition: all 1s ease 0s;
+    display: flex;
 }
 
-.header:hover .navLinks {
+.navLinks:hover {
     transform: translate(0);
-
 }
 
 .link {
     padding-right: 10px;
+    color: darkgreen;
+}
+
+.activeLink {
+    padding-right: 10px;
+    color: white;
+}
+
+.square {
+    width: 15px;
+    height: 15px;
+    background: gold;
+    border: 1px solid darkgreen;
 }
