@@ -2,6 +2,7 @@
     display: flex;
     align-items: flex-end;
     font-family: Tahoma;
+    margin: 25px;
 }
 .messageItem__avatar {
     width: 60px;

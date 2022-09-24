@@ -1,0 +1,12 @@
+.span{
+    display: block;
+    margin: 10px 0px;
+}
+
+.span::before {
+content: "✎ ";
+}
+
+.input {
+    margin: 10px 0px;
+}
