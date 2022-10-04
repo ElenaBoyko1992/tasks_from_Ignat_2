@@ -1,0 +1,26 @@
+.wrapper {
+    margin: 30px;
+}
+
+.select {
+    background-color: darkgreen;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    color: white;
+}
+
+.radio {
+    appearance: none;
+    background-color: darkseagreen;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+.radio:checked {
+    background: darkgreen;
+}
