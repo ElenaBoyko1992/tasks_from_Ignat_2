@@ -1,0 +1,21 @@
+.hw8 {
+    margin: 25px
+}
+
+.usersList {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+}
+
+.button {
+    margin-right: 5px;
+}
