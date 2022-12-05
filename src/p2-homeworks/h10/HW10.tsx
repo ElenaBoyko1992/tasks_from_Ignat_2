@@ -21,7 +21,7 @@ function HW10() {
         <div>
             <hr/>
             homeworks 10
-            <div className={s.hw10}>
+            <div className={s.wrapper}>
                 {/*should work (должно работать)*/}
                 {loading
                     ? (

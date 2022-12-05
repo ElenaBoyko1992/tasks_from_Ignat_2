@@ -1,0 +1,12 @@
+.range {
+    display: flex;
+    align-items: center;
+}
+
+.minValue {
+    margin-right: 10px;
+}
+
+.maxValue {
+    margin-left: 10px;
+}
