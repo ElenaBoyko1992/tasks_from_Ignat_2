@@ -5,6 +5,7 @@
 
 .minValue {
     margin-right: 10px;
+    min-width: 20px;
 }
 
 .maxValue {
