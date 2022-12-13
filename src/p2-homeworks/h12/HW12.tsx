@@ -11,7 +11,7 @@ const themes = ['some', 'dark', 'red', 'yellow'];
 function HW12() {
     //const theme = 'some'; // useSelector
 
-    const theme = useSelector<AppStoreType, StateType>(state => state.theme).theme
+    const theme = useSelector<AppStoreType, string>(state => state.theme.theme);
     const dispatch = useDispatch()
 
     // useDispatch, onChangeCallback
@@ -24,9 +24,9 @@ function HW12() {
         <div className={s[theme]}>
             <hr/>
             <div className={commonstyle.wrapper}>
-                            <span className={`${s.text} ${s[theme + '-text']}`}>
+                <span className={`${s.text} ${s[theme + '-text']}`}>
                 homeworks 12
-            </span>
+                </span>
 
                 {/*should work (должно работать)*/}
                 {/*SuperSelect or SuperRadio*/}
