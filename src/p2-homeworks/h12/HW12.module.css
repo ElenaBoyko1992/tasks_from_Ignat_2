@@ -1,3 +1,11 @@
+
+.text {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
 .dark {
     background: dimgrey;
 }
@@ -20,4 +28,16 @@
 
 .some-text {
     color: darkslateblue;
+}
+
+.yellow {
+    background: #ffe07f;
+}
+
+.select{
+    width: 150px;
+    padding: 5px;
+    display: block;
+    border-radius: 10px;
+    font-size: 18px;
 }
