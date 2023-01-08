@@ -25,7 +25,7 @@ function HW12() {
             <hr/>
             <div className={commonstyle.wrapper}>
                 <span className={`${s.text} ${s[theme + '-text']}`}>
-                homeworks 12
+                homework 12
                 </span>
 
                 {/*should work (должно работать)*/}
