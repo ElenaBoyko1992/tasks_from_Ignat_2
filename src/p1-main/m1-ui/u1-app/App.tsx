@@ -14,12 +14,12 @@ function App() {
     return (
         <div className={`${s.App} ${style[theme]}`}>
             <div>react homeworks:</div>
-{/*         <HW1/>
-            <HW2/>
+         <HW1/>
+{/*            <HW2/>
             <HW3/>
             <HW4/>*/}
             {/* eslint-disable-next-line react/jsx-no-undef */}
-            <HW5/>
+            {/*<HW5/>*/}
 
         </div>
     );
