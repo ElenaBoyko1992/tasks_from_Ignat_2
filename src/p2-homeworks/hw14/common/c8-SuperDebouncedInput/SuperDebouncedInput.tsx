@@ -39,11 +39,14 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
             // запустить новый на 1500ms, в котором вызовется функция
 
             //
+            if (timerId) {
+                clearTimeout(timerId)
+            }
 
-            let timer = setTimeout(() => {
+            let timer = setTimeout(() => { // как правильно сделать? +прыгает слово "ищем" при длолгом вводе в инпут
                 onDebouncedChange(value)
-                clearTimeout(timer)
             }, 1500)
+            setTimerId(+timer)
 
 
         }

@@ -10,15 +10,15 @@ import commonstyle from "../h10/HW10.module.css";
 * 1 - дописать функцию onChangeTextCallback в SuperDebouncedInput
 * 2 - дописать функцию sendQuery в HW14 - done
 * 3 - дописать функцию onChangeText в HW14 - done
-* 4 - сделать стили в соответствии с дизайном
+* 4 - сделать стили в соответствии с дизайном - done
 * 5 - добавить HW14 в HW5/pages/JuniorPlus - done
 * */
 
 const getTechs = (find: string) => {
     return axios
         .get<{ techs: string[] }>(
-            'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test2',
-            {params: {find}} //что это?
+            ` 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test2'`,
+            {params: {find}} //что это? в гет-запросе же не бывает payload? - это один из способов передачи URI параметров
         )
         .catch((e) => {
             alert(e.response?.data?.errorText || e.message)
@@ -52,7 +52,8 @@ const HW14 = () => {
         // setSearchParams(
 
         //причем здесь URL?
-        setSearchParams(value)
+        console.log(value, "-value")
+        setSearchParams({find: value})
 
     }
 
