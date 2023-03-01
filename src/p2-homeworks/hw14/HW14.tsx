@@ -17,8 +17,8 @@ import commonstyle from "../h10/HW10.module.css";
 const getTechs = (find: string) => {
     return axios
         .get<{ techs: string[] }>(
-            ` 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test2'`,
-            {params: {find}} //что это? в гет-запросе же не бывает payload? - это один из способов передачи URI параметров
+            'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test2',
+            {params: {find}}
         )
         .catch((e) => {
             alert(e.response?.data?.errorText || e.message)

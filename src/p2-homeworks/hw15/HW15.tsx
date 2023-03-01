@@ -5,6 +5,7 @@ import axios from 'axios'
 import {useSearchParams} from 'react-router-dom'
 import SuperSort from "./common/c10-SuperSort/SuperSort";
 import SuperPagination from "./common/c9-SuperPagination/SuperPagination";
+import {log} from "util";
 
 
 /*
@@ -57,8 +58,10 @@ const HW15 = () => {
                 setLoading(false)
                 // сохранить пришедшие данные
 
-                //пока заглушка
-                setTechs([])
+                // @ts-ignore
+                setTechs(res?.data.techs)
+                // @ts-ignore
+                setTotalCount(res?.data.totalCount)
                 //
             })
     }
