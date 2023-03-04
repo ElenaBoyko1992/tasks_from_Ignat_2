@@ -7,6 +7,7 @@ import SuperSort from "./common/c10-SuperSort/SuperSort";
 import SuperPagination from "./common/c9-SuperPagination/SuperPagination";
 import {log} from "util";
 import {CircularProgress} from "@mui/material";
+import commonstyle from "../h10/HW10.module.css";
 
 
 /*
@@ -122,33 +123,36 @@ const HW15 = () => {
         <div id={'hw15'} className={s.hv15}>
             <hr/>
             <div className={s2.hwTitle}>Homework #15</div>
-            <div className={`${s2.hw} ${s.table}`}>
-                {idLoading ? <CircularProgress disableShrink/> :
-                    <div>
-                        <SuperPagination
-                            page={page}
-                            itemsCountForPage={count}
-                            totalCount={totalCount}
-                            onChange={onChangePagination}
-                        />
+            <div className={commonstyle.wrapper}>
+                <div className={`${s2.hw} ${s.table}`}>
+                    {idLoading ? <CircularProgress disableShrink/> :
+                        <div>
+                            <SuperPagination
+                                page={page}
+                                itemsCountForPage={count}
+                                totalCount={totalCount}
+                                onChange={onChangePagination}
+                            />
 
-                        <div className={s.rowHeader}>
-                            <div className={s.techHeader}>
-                                tech
-                                <SuperSort sort={sort} value={'tech'} onChange={onChangeSort}/>
+                            <div className={s.rowHeader}>
+                                <div className={s.techHeader}>
+                                    tech
+                                    <SuperSort sort={sort} value={'tech'} onChange={onChangeSort}/>
+                                </div>
+
+                                <div className={s.developerHeader}>
+                                    developer
+                                    <SuperSort sort={sort} value={'developer'} onChange={onChangeSort}/>
+                                </div>
                             </div>
 
-                            <div className={s.developerHeader}>
-                                developer
-                                <SuperSort sort={sort} value={'developer'} onChange={onChangeSort}/>
-                            </div>
+                            {mappedTechs}
                         </div>
+                    }
 
-                        {mappedTechs}
-                    </div>
-                }
-
+                </div>
             </div>
+
         </div>
     )
 }

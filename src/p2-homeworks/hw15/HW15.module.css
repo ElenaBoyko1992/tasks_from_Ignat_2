@@ -1,9 +1,11 @@
 .hv15 {
     padding-bottom: 30px;
 }
+
 .table {
     width: 500px;
 }
+
 .tech {
     width: 50%;
 
@@ -34,6 +36,7 @@
     background-color: gray;
     justify-content: space-between;
     padding: 10px;
+    margin-top: 15px;
 }
 
 .loading {
